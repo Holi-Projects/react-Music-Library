@@ -1,3 +1,3 @@
 # react-musiclib
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-musiclib)
+demo available @ https://react-musiclib.stackblitz.io/

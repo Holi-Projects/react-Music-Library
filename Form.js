@@ -1,7 +1,7 @@
 import React from 'react';
 import Artist from './Artist'
 
-const API_KEY = ''
+const API_KEY = 'd0ae48d95e48d6f03c3a2836f8642799'
 
 function Form(props) {
   
