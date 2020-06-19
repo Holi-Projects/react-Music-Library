@@ -1,0 +1,59 @@
+.content{
+ margin-left: 15%;
+ margin-right: 15%
+}
+
+.top{
+  display: -webkit-box;
+}
+
+.top button{
+  margin: 70px 30px 30px 192px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: lightgreen;
+  position: absolute
+}
+
+#tag {
+  font-size: 25px;
+  margin-left: 20px;
+  border-radius: 15px;
+  float: left;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  border-color: skyblue
+  /* display: inline-block; */
+
+}
+
+#tag:hover{
+    background-color: skyblue
+}
+
+.genre{
+  display: inline-block
+}
+
+.similar div{
+  display: inline-block;
+}
+
+.similar p{
+  margin-left: 10px;
+}
+
+.stats{
+  display: inline-flex;
+    margin-left: 350px;
+    position: absolute;
+    margin-top: 60px;
+}
+
+.stats p span{
+  font-size: 20px;
+  font-weight: bold;
+  color:coral
+
+}
