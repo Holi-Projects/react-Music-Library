@@ -7,6 +7,7 @@ function Artist(props){
 
   const img = ''
   const bio = ''
+  const link = ''
   const genre = []
   let listeners = 0
   let play = 0
@@ -15,7 +16,7 @@ function Artist(props){
   const[avaVis, setAvaVis] = React.useState('hidden')
 
   if(props.artist){
-  //console.log(props.artist)
+  console.log(props.artist.bio)
  
     for (let tag of props.artist.tags.tag) {
       genre.push(<button key={tag.name} id='tag'>{tag.name}</button>);
@@ -34,10 +35,14 @@ function Artist(props){
   play = props.artist.stats.playcount
   listeners = props.artist.stats.listeners
 
-  console.log(props.artist.image[1]['#text'])
-  
   img = props.artist.image[4]['#text']
   bio = props.artist.bio.summary
+  link = bio.substring(bio.indexOf('<a'),bio.length-1)
+  link = link.substring(link.indexOf('https'),link.indexOf('">'))
+  bio = bio.substring(0,bio.indexOf('<a'))
+  
+  console.log(link)
+  //console.log(bio.substring(bio.indexOf('<a'),bio.length-1))
   }
 
   var zeroCount = 6;
@@ -69,10 +74,11 @@ function Artist(props){
         <p>Playcount: <span>{playcount}M</span></p>
         </div>
       </div>
-
+      
     
       <div>
         <h3>Biography: </h3>{bio}
+        <a href={link}>Read more on Last.fm</a>
       </div>
 
       <div className='genre'>
