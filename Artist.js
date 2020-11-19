@@ -5,9 +5,9 @@ import UserAvatar from 'react-user-avatar'
 
 function Artist(props){
 
-  const img = ''
-  const bio = ''
-  const link = ''
+  let img = ''
+  let bio = ''
+  let link = ''
   const genre = []
   let listeners = 0
   let play = 0
